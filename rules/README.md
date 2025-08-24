@@ -48,11 +48,10 @@ Three effect types are available for different animation needs:
 ### 1. Trigger-Specific Rules
 Each trigger type has dedicated rule files with patterns for common use cases:
 
-- **hover-rules.md** - Hover effects, state management, enter/leave animations
-- **click-rules.md** - Click interactions, toggles, state patterns
-- **viewenter-rules.md** - Entrance animations, staggered effects, intersection patterns
-- **viewprogress-rules.md** - Scroll animations, parallax effects, progress tracking
-- **viewenter-rules.md** - Viewport entry animations and patterns
+- **[hover-rules.md](hover-rules.md)** - Hover effects, state management, enter/leave animations
+- **[click-rules.md](click-rules.md)** - Click interactions, toggles, state patterns
+- **[viewenter-rules.md](viewenter-rules.md)** - Entrance animations, staggered effects, intersection patterns
+- **[viewprogress-rules.md](viewprogress-rules.md)** - Scroll animations, parallax effects, progress tracking
 
 ### 2. Configuration Patterns
 Common patterns for different interaction scenarios:
@@ -141,67 +140,6 @@ Guidelines for proper DOM integration:
    - TimeEffect requires `duration` and optional `easing`
    - TransitionEffect requires CSS property definitions
    - ScrubEffect requires scroll or pointer parameters
-
-### Common Patterns and Templates
-
-#### Basic Hover Effect
-```typescript
-{
-  source: '[SELECTOR]',
-  trigger: 'hover',
-  effects: [
-    {
-      target: '[TARGET_SELECTOR]',
-      keyframeEffect: {
-        transform: ['scale(1)', 'scale(1.05)']
-      },
-      duration: 300,
-      easing: 'ease-out'
-    }
-  ]
-}
-```
-
-#### Click Toggle
-```typescript
-{
-  source: '[SELECTOR]',
-  trigger: 'click',
-  params: {
-    type: 'alternate'
-  },
-  effects: [
-    {
-      target: '[TARGET_SELECTOR]',
-      keyframeEffect: {
-        // Animation keyframes
-      },
-      duration: 400,
-      easing: 'ease-out'
-    }
-  ]
-}
-```
-
-#### Entrance Animation
-```typescript
-{
-  source: '[SELECTOR]',
-  trigger: 'viewEnter',
-  params: {
-    type: 'once',
-    threshold: 0.1
-  },
-  effects: [
-    {
-      target: '[TARGET_SELECTOR]',
-      namedEffect: 'FadeIn',
-      duration: 600,
-      easing: 'ease-out'
-    }
-  ]
-}
-```
 
 ### Error Prevention
 
