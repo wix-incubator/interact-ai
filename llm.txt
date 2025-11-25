@@ -1,0 +1,8 @@
+# Interact AI Documentation
+> A powerful, declarative interaction library for web animations.
+
+## Core Documentation
+- [Getting Started](https://wix-incubator.github.io/interact-ai)
+
+## For AI Agents
+- [Full Context](https://wix-incubator.github.io/interact-ai/llms-full.txt)

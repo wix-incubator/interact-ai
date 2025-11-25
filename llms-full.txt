@@ -325,6 +325,3 @@ const config: InteractConfig = {
 - Use `conditions` to provide responsive and accessible behavior:
   - Define media conditions such as `'(prefers-reduced-motion: reduce)'` and breakpoint queries, and attach them to interactions/effects to disable, simplify, or swap animations when appropriate.
   - Provide alternative reduced‑motion variants (e.g., shorter durations, fewer transforms, no perpetual motion/parallax/3D), and select them via `conditions` or effect references so that users who prefer reduced motion get a gentler experience.
-
-
-For AI Agents: [llms.txt](https://wix-incubator.github.io/interact-ai/llms.txt)
